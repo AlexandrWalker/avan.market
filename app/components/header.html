@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vira</title>
+  <title>Avan.Market</title>
 
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -14,20 +14,95 @@
   <div class="wrapper">
     <header class="header">
       <div class="container">
-
-        <div class="topbar">
-          <div class="container">
-            <div class="topbar__inner">
-
+        <div class="header__inner">
+          <button class="burger" id="burger">
+            <img class="burger__img" src="images/icons/burger.svg" alt="menu">
+          </button>
+          <a class="logo" href="#!">
+            <img class="logo__img" src="images/logo.svg" alt="logo">
+          </a>
+          <nav class="nav" id="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link active" href="#!">Главная</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#!">Партнерка</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link button" href="#!">Блог
+                  <img class="nav__link-arrow" src="images/icons/arrow.svg" alt="arrow">
+                </a>
+                <ul class="nav__dropdown">
+                  <li class="nav__dropdown-item">
+                    <a class="nav__dropdown-link" href="#!">CS2</a>
+                  </li>
+                  <li class="nav__dropdown-item">
+                    <a class="nav__dropdown-link" href="#!">Dota 2</a>
+                  </li>
+                  <li class="nav__dropdown-item">
+                    <a class="nav__dropdown-link" href="#!">RUST</a>
+                  </li>
+                  <li class="nav__dropdown-item">
+                    <a class="nav__dropdown-link" href="#!">TF2</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#!">Отзывы</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#!">Помощь</a>
+              </li>
+            </ul>
+            <div class="select">
+              <div class="currency">
+                <button class="currency__title button">
+                  <span class="currency__symbol">$</span>
+                  <span class="currency__text">USD</span>
+                </button>
+                <ul class="currency__list">
+                  <li class="currency__item">
+                    <a class="currency__link target" href="#!">$ USD</a>
+                  </li>
+                  <li class="currency__item">
+                    <a class="currency__link" href="#!">₽ RUB</a>
+                  </li>
+                  <li class="currency__item">
+                    <a class="currency__link" href="#!">₴ UAH</a>
+                  </li>
+                  <li class="currency__item">
+                    <a class="currency__link" href="#!">Br BYN</a>
+                  </li>
+                  <li class="currency__item">
+                    <a class="currency__link" href="#!">₸ KZT</a>
+                  </li>
+                  <li class="currency__item">
+                    <a class="currency__link" href="#!">€ EUR</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="language">
+                <button class="language__title button">
+                  <img class="language__img" src="images/icons/web.svg" alt="web">
+                  <span class="language__text">RUS</span>
+                </button>
+                <ul class="language__list">
+                  <li class="language__item">
+                    <a class="language__link target" href="#!">RUS</a>
+                  </li>
+                  <li class="language__item">
+                    <a class="language__link" href="#!">ENG</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
+          </nav>
+          <button class="header__btn btn">
+            <img class="header__btn-img" src="images/icons/steam-logo.svg" alt="steam">
+            <span class="header__btn-text">Войти через Steam</span>
+            <span class="header__btn-text--mobile">Войти</span>
+          </button>
         </div>
-
-        <div class="container">
-          <div class="header__inner">
-
-          </div>
-        </div>
-
       </div>
     </header>

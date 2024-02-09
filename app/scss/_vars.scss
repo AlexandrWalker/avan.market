@@ -1,5 +1,55 @@
 :root {
     --white: #FFF;
+    --grey: #7d8999;
+    --grey_btn: #262a32;
+    --secondary-grey: #858b98;
     --black: #000;
-    --bg: #fff;
+    --orange: #fbd506;
+    --border-color: #333540;
+    --bg: #101012;
+    --bg-light: #fff;
+    --bg-dark: #1a1b20;
+
+
+
+    --primary-text-color: #fff;
+    --primary-hovered-text-color: #9da6b8;
+    --secondary-text-color: #858b98;
+    --article-bg-color: #1a1b20;
+    --black-text-color: #121314;
+    --grey_btn-bg-color: #262a32;
+    --hovered-grey_btn-bg-color: #313742;
+    --active-grey_btn-bg-color: #20242a;
+    --bg-color: #101012;
+    --font-color: #7d8999;
+    --link-color: #56cbf2;
+    --bg-color-input: #1a1e20;
+    --hovered-border: #495160;
+    --notification-color: #d63232;
+    --input-border: #353b46;
+    --input-hover-border: #586172;
+    --input-hover-bg-color: #333842;
+    --sidebar-grey-color: #a3b5c6;
+    --sidebar-blue-color: #5e98d9;
+    --sidebar-dark-blue-color: #5a74ff;
+    --sidebar-violet-color: #a353ff;
+    --sidebar-pink-color: #d823e1;
+    --sidebar-red-color: #f13640;
+    --sidebar-green-color: #ade55c;
+    --sidebar-orange-color: #ff9f0a;
+    --basket-border: #26282b;
+    --button-main-hover: #ffe81c;
+    --scrollbar-color: #4c555f;
+    --main-green: #30d158;
+    --button-click: #f0cb08;
+    --green-button: #1fb444;
+    --green-button-active: #179e39;
+    --grey-grafit-button: #262a2f;
+    --background-color: #1d2026;
+    --background-cart-color: #1f2026;
+    --background-cart-color-total: #191a1f;
+    --trash-color: #bf2626;
+    --icon-svg-color: #707c8c;
+    --time-color: #30281e;
+    --new-border-bottom: #333540;
 }

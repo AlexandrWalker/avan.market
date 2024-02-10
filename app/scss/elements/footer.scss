@@ -1,5 +1,5 @@
 .footer {
-  
+
   .container {
     max-width: 1170px;
     padding-bottom: 40px;
@@ -37,11 +37,22 @@
     gap: 32px;
 
     &-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       font-size: 16px;
       font-weight: 600;
       line-height: 19px;
       color: var(--white, #fff);
       text-transform: uppercase;
+    }
+
+    &-arrow {
+      display: none;
+      width: 18px;
+      height: 18px;
+      transform: rotate(90deg);
+      fill: var(--secondary-grey, #858b98);
     }
   }
 

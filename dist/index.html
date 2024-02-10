@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Avan.Market</title>
-
+  <link rel="stylesheet" href="libs/slick/slick.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -98,17 +98,516 @@
               </div>
             </div>
           </nav>
-          <button class="header__btn btn">
+          <a class="header__btn btn"
+            href="https://steamcommunity.com/openid/login?openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.sreg=http%3A%2F%2Fopenid.net%2Fextensions%2Fsreg%2F1.1&openid.sreg.optional=nickname%2Cemail%2Cfullname%2Cdob%2Cgender%2Cpostcode%2Ccountry%2Clanguage%2Ctimezone&openid.ns.ax=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ax.mode=fetch_request&openid.ax.type.fullname=http%3A%2F%2Faxschema.org%2FnamePerson&openid.ax.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ax.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ax.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ax.required=fullname%2Cfirstname%2Clastname%2Cemail&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.return_to=https%3A%2F%2Favan.market%2Fapi%2Fauth%2Fsteam%2Fcallback&openid.realm=https%3A%2F%2Favan.market%2Fapi"
+            target="_blank">
             <img class="header__btn-img" src="images/icons/steam-logo.svg" alt="steam">
             <span class="header__btn-text">Войти через Steam</span>
             <span class="header__btn-text--mobile">Войти</span>
-          </button>
+          </a>
         </div>
       </div>
     </header>
 <main class="main">
+  <div class="hero">
+    <div class="container">
+      <div class="hero__inner">
+        <div class="hero__content">
+          <a class="hero__top" href="https://www.trustpilot.com/review/avan.market">
+            <img class="hero__top-img" src="images/icons/trustpilot-logo.svg" alt="trustpilot">
+            <div class="hero__top-item">
+              <img class="hero__top-grade" src="images/icons/trustpilot-stars.svg" alt="trustpilot">
+              <span>1087 отзывов</span>
+            </div>
+          </a>
+          <div class="hero__text">
+            <h1 class="hero__title">Продай скины в пару кликов!</h1>
+            <h5 class="hero__suptitle">Продай скины CSGO, Dota 2, RUST, TF2 и получи выплаты на банковскую карту,
+              криптовалюту или электронные деньги.</h5>
+          </div>
+          <div class="hero__btns">
+            <a class="hero__link btn"
+              href="https://steamcommunity.com/openid/login?openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.sreg=http%3A%2F%2Fopenid.net%2Fextensions%2Fsreg%2F1.1&openid.sreg.optional=nickname%2Cemail%2Cfullname%2Cdob%2Cgender%2Cpostcode%2Ccountry%2Clanguage%2Ctimezone&openid.ns.ax=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ax.mode=fetch_request&openid.ax.type.fullname=http%3A%2F%2Faxschema.org%2FnamePerson&openid.ax.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ax.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ax.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ax.required=fullname%2Cfirstname%2Clastname%2Cemail&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.return_to=https%3A%2F%2Favan.market%2Fapi%2Fauth%2Fsteam%2Fcallback&openid.realm=https%3A%2F%2Favan.market%2Fapi"
+              target="_blank">
+              <img class="hero__btn-img" src="images/icons/shopping-card.svg" alt="shopping-card">
+              Продать скины
+            </a>
+            <button class="hero__btn" data-id="modal-1">
+              <img class="hero__btn-img" src="images/icons/play.svg" alt="play">
+              Смотреть демо
+            </button>
+          </div>
+        </div>
+        <div class="hero__cover">
+          <img class="hero__cover-img" src="images/hero/image.webp" alt="cover">
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div class="features">
+    <div class="container">
+      <div class="features__inner">
+        <div class="features__item">
+          <h3 class="features__title">100% безопасность</h3>
+          <h5 class="features__suptitle">Все транзакции защищены 256 битным SSL сертификатом.</h5>
+        </div>
+        <div class="features__item">
+          <h3 class="features__title">Без скрытых комиссий</h3>
+          <h5 class="features__suptitle">Вся информация по сделке, включая комиссию, будет указана при оформлении
+            заказа.</h5>
+        </div>
+        <div class="features__item">
+          <h3 class="features__title">Быстрые выплаты</h3>
+          <h5 class="features__suptitle">Все ваши выплаты производятся в течение 15 минут.</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="liveline">
+    <div class="container">
+      <div class="liveline__inner">
+        <div class="liveline__head">
+          <div class="liveline__head-item">
+            <img class="liveline__head-img" src="images/icons/indicator-live.svg" alt="indicator-live">
+            <h3 class="liveline__head-title">LIVE лента продаж</h3>
+          </div>
+          <div class="liveline__head-item">
+            <p class="liveline__head-text">Всего продано скинов: <span class="liveline__stat">2281233</span></p>
+          </div>
+        </div>
+        <div class="liveline__slider">
+          <div class="liveline__slider-item">
+            <div class="liveline__item">
+              <div class="liveline__item-top">
+                <p class="liveline__item-time">12 мин. назад</p>
+                <p class="liveline__item-box">BS</p>
+              </div>
+              <img class="liveline__item-img"
+                src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhjxszJemkV0924lZKIn-7LO77QgHIfusd30-3H8NqgilGwrRBpZG7wIdDHdgc7YV3Rq1e-x-a5gp_u6ZSYmmwj5HcS3vwV9A"
+                alt="item">
+              <div class="liveline__item-bottom">
+                <p class="liveline__item-name">AK-47 | Neon Revolution</p>
+                <span class="liveline__item-ptice">8.35 €</span>
+              </div>
+            </div>
+          </div>
+          <div class="liveline__slider-item">
+            <div class="liveline__item">
+              <div class="liveline__item-top">
+                <p class="liveline__item-time">12 мин. назад</p>
+                <p class="liveline__item-box">BS</p>
+              </div>
+              <img class="liveline__item-img"
+                src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhjxszJemkV0924lZKIn-7LO77QgHIfusd30-3H8NqgilGwrRBpZG7wIdDHdgc7YV3Rq1e-x-a5gp_u6ZSYmmwj5HcS3vwV9A"
+                alt="item">
+              <div class="liveline__item-bottom">
+                <p class="liveline__item-name">AK-47 | Neon Revolution</p>
+                <span class="liveline__item-ptice">8.35 €</span>
+              </div>
+            </div>
+          </div>
+          <div class="liveline__slider-item">
+            <div class="liveline__item">
+              <div class="liveline__item-top">
+                <p class="liveline__item-time">12 мин. назад</p>
+                <p class="liveline__item-box">BS</p>
+              </div>
+              <img class="liveline__item-img"
+                src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhjxszJemkV0924lZKIn-7LO77QgHIfusd30-3H8NqgilGwrRBpZG7wIdDHdgc7YV3Rq1e-x-a5gp_u6ZSYmmwj5HcS3vwV9A"
+                alt="item">
+              <div class="liveline__item-bottom">
+                <p class="liveline__item-name">AK-47 | Neon Revolution</p>
+                <span class="liveline__item-ptice">8.35 €</span>
+              </div>
+            </div>
+          </div>
+          <div class="liveline__slider-item">
+            <div class="liveline__item">
+              <div class="liveline__item-top">
+                <p class="liveline__item-time">12 мин. назад</p>
+                <p class="liveline__item-box">BS</p>
+              </div>
+              <img class="liveline__item-img"
+                src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhjxszJemkV0924lZKIn-7LO77QgHIfusd30-3H8NqgilGwrRBpZG7wIdDHdgc7YV3Rq1e-x-a5gp_u6ZSYmmwj5HcS3vwV9A"
+                alt="item">
+              <div class="liveline__item-bottom">
+                <p class="liveline__item-name">AK-47 | Neon Revolution</p>
+                <span class="liveline__item-ptice">8.35 €</span>
+              </div>
+            </div>
+          </div>
+          <div class="liveline__slider-item">
+            <div class="liveline__item">
+              <div class="liveline__item-top">
+                <p class="liveline__item-time">12 мин. назад</p>
+                <p class="liveline__item-box">BS</p>
+              </div>
+              <img class="liveline__item-img"
+                src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhjxszJemkV0924lZKIn-7LO77QgHIfusd30-3H8NqgilGwrRBpZG7wIdDHdgc7YV3Rq1e-x-a5gp_u6ZSYmmwj5HcS3vwV9A"
+                alt="item">
+              <div class="liveline__item-bottom">
+                <p class="liveline__item-name">AK-47 | Neon Revolution</p>
+                <span class="liveline__item-ptice">8.35 €</span>
+              </div>
+            </div>
+          </div>
+          <div class="liveline__slider-item">
+            <div class="liveline__item">
+              <div class="liveline__item-top">
+                <p class="liveline__item-time">12 мин. назад</p>
+                <p class="liveline__item-box">BS</p>
+              </div>
+              <img class="liveline__item-img"
+                src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhjxszJemkV0924lZKIn-7LO77QgHIfusd30-3H8NqgilGwrRBpZG7wIdDHdgc7YV3Rq1e-x-a5gp_u6ZSYmmwj5HcS3vwV9A"
+                alt="item">
+              <div class="liveline__item-bottom">
+                <p class="liveline__item-name">AK-47 | Neon Revolution</p>
+                <span class="liveline__item-ptice">8.35 €</span>
+              </div>
+            </div>
+          </div>
+          <div class="liveline__slider-item">
+            <div class="liveline__item">
+              <div class="liveline__item-top">
+                <p class="liveline__item-time">12 мин. назад</p>
+                <p class="liveline__item-box">BS</p>
+              </div>
+              <img class="liveline__item-img"
+                src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhjxszJemkV0924lZKIn-7LO77QgHIfusd30-3H8NqgilGwrRBpZG7wIdDHdgc7YV3Rq1e-x-a5gp_u6ZSYmmwj5HcS3vwV9A"
+                alt="item">
+              <div class="liveline__item-bottom">
+                <p class="liveline__item-name">AK-47 | Neon Revolution</p>
+                <span class="liveline__item-ptice">8.35 €</span>
+              </div>
+            </div>
+          </div>
+          <div class="liveline__slider-item">
+            <div class="liveline__item">
+              <div class="liveline__item-top">
+                <p class="liveline__item-time">12 мин. назад</p>
+                <p class="liveline__item-box">BS</p>
+              </div>
+              <img class="liveline__item-img"
+                src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhjxszJemkV0924lZKIn-7LO77QgHIfusd30-3H8NqgilGwrRBpZG7wIdDHdgc7YV3Rq1e-x-a5gp_u6ZSYmmwj5HcS3vwV9A"
+                alt="item">
+              <div class="liveline__item-bottom">
+                <p class="liveline__item-name">AK-47 | Neon Revolution</p>
+                <span class="liveline__item-ptice">8.35 €</span>
+              </div>
+            </div>
+          </div>
+          <div class="liveline__slider-item">
+            <div class="liveline__item">
+              <div class="liveline__item-top">
+                <p class="liveline__item-time">12 мин. назад</p>
+                <p class="liveline__item-box">BS</p>
+              </div>
+              <img class="liveline__item-img"
+                src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhjxszJemkV0924lZKIn-7LO77QgHIfusd30-3H8NqgilGwrRBpZG7wIdDHdgc7YV3Rq1e-x-a5gp_u6ZSYmmwj5HcS3vwV9A"
+                alt="item">
+              <div class="liveline__item-bottom">
+                <p class="liveline__item-name">AK-47 | Neon Revolution</p>
+                <span class="liveline__item-ptice">8.35 €</span>
+              </div>
+            </div>
+          </div>
+          <div class="liveline__slider-item">
+            <div class="liveline__item">
+              <div class="liveline__item-top">
+                <p class="liveline__item-time">12 мин. назад</p>
+                <p class="liveline__item-box">BS</p>
+              </div>
+              <img class="liveline__item-img"
+                src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhjxszJemkV0924lZKIn-7LO77QgHIfusd30-3H8NqgilGwrRBpZG7wIdDHdgc7YV3Rq1e-x-a5gp_u6ZSYmmwj5HcS3vwV9A"
+                alt="item">
+              <div class="liveline__item-bottom">
+                <p class="liveline__item-name">AK-47 | Neon Revolution</p>
+                <span class="liveline__item-ptice">8.35 €</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="reviews">
+    <div class="container">
+      <div class="reviews__inner">
+        <div class="reviews__content">
+          <h6 class="reviews__title">Что о нас пишут наши клиенты</h6>
+          <h5 class="reviews__suptitle">Вы получите много преимуществ от наших функций. Продать или купить товар в нашем
+            маркете стало намного проще.</h5>
+          <button class="reviews__btn btn">
+            Посмотреть все отзывы
+          </button>
+        </div>
+        <div class="reviews__body">
+          <div class="reviews__slider">
+            <div class="reviews__slider-item">
+              <div class="reviews__item">
+                <div class="reviews__item-content">
+                  <div class="reviews__item-head">
+                    <img class="reviews__item-avatar" src="images/reviews/reviews-1.jpg" alt="avatar">
+                    <img class="reviews__item-logo" src="images/logo-small-white.svg" alt="logo">
+                  </div>
+                  <a class="reviews__item-name" href="#!">Антоша</a>
+                  <p class="reviews__item-text">Всё топ! Пользовался многими подобными сайтами, пока что этот радует
+                    больше
+                    всего!</p>
+                </div>
+                <div class="reviews__item-grade">
+                  <img src="images/icons/star.svg" alt="" class="reviews__item-img">
+                  <span>5 из 5</span>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__slider-item">
+              <div class="reviews__item">
+                <div class="reviews__item-content">
+                  <div class="reviews__item-head">
+                    <img class="reviews__item-avatar" src="images/reviews/reviews-1.jpg" alt="avatar">
+                    <img class="reviews__item-logo" src="images/logo-small-white.svg" alt="logo">
+                  </div>
+                  <a class="reviews__item-name" href="#!">Антоша</a>
+                  <p class="reviews__item-text">Всё топ! Пользовался многими подобными сайтами, пока что этот радует
+                    больше
+                    всего!</p>
+                </div>
+                <div class="reviews__item-grade">
+                  <img src="images/icons/star.svg" alt="" class="reviews__item-img">
+                  <span>5 из 5</span>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__slider-item">
+              <div class="reviews__item">
+                <div class="reviews__item-content">
+                  <div class="reviews__item-head">
+                    <img class="reviews__item-avatar" src="images/reviews/reviews-1.jpg" alt="avatar">
+                    <img class="reviews__item-logo" src="images/logo-small-white.svg" alt="logo">
+                  </div>
+                  <a class="reviews__item-name" href="#!">Антоша</a>
+                  <p class="reviews__item-text">Всё топ! Пользовался многими подобными сайтами, пока что этот радует
+                    больше
+                    всего!</p>
+                </div>
+                <div class="reviews__item-grade">
+                  <img src="images/icons/star.svg" alt="" class="reviews__item-img">
+                  <span>5 из 5</span>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__slider-item">
+              <div class="reviews__item">
+                <div class="reviews__item-content">
+                  <div class="reviews__item-head">
+                    <img class="reviews__item-avatar" src="images/reviews/reviews-1.jpg" alt="avatar">
+                    <img class="reviews__item-logo" src="images/logo-small-white.svg" alt="logo">
+                  </div>
+                  <a class="reviews__item-name" href="#!">Антоша</a>
+                  <p class="reviews__item-text">Всё топ! Пользовался многими подобными сайтами, пока что этот радует
+                    больше
+                    всего!</p>
+                </div>
+                <div class="reviews__item-grade">
+                  <img src="images/icons/star.svg" alt="" class="reviews__item-img">
+                  <span>5 из 5</span>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__slider-item">
+              <div class="reviews__item">
+                <div class="reviews__item-content">
+                  <div class="reviews__item-head">
+                    <img class="reviews__item-avatar" src="images/reviews/reviews-1.jpg" alt="avatar">
+                    <img class="reviews__item-logo" src="images/logo-small-white.svg" alt="logo">
+                  </div>
+                  <a class="reviews__item-name" href="#!">Антоша</a>
+                  <p class="reviews__item-text">Всё топ! Пользовался многими подобными сайтами, пока что этот радует
+                    больше
+                    всего!</p>
+                </div>
+                <div class="reviews__item-grade">
+                  <img src="images/icons/star.svg" alt="" class="reviews__item-img">
+                  <span>5 из 5</span>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__slider-item">
+              <div class="reviews__item">
+                <div class="reviews__item-content">
+                  <div class="reviews__item-head">
+                    <img class="reviews__item-avatar" src="images/reviews/reviews-1.jpg" alt="avatar">
+                    <img class="reviews__item-logo" src="images/logo-small-white.svg" alt="logo">
+                  </div>
+                  <a class="reviews__item-name" href="#!">Антоша</a>
+                  <p class="reviews__item-text">Всё топ! Пользовался многими подобными сайтами, пока что этот радует
+                    больше
+                    всего!</p>
+                </div>
+                <div class="reviews__item-grade">
+                  <img src="images/icons/star.svg" alt="" class="reviews__item-img">
+                  <span>5 из 5</span>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__slider-item">
+              <div class="reviews__item">
+                <div class="reviews__item-content">
+                  <div class="reviews__item-head">
+                    <img class="reviews__item-avatar" src="images/reviews/reviews-1.jpg" alt="avatar">
+                    <img class="reviews__item-logo" src="images/logo-small-white.svg" alt="logo">
+                  </div>
+                  <a class="reviews__item-name" href="#!">Антоша</a>
+                  <p class="reviews__item-text">Всё топ! Пользовался многими подобными сайтами, пока что этот радует
+                    больше
+                    всего!</p>
+                </div>
+                <div class="reviews__item-grade">
+                  <img src="images/icons/star.svg" alt="" class="reviews__item-img">
+                  <span>5 из 5</span>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__slider-item">
+              <div class="reviews__item">
+                <div class="reviews__item-content">
+                  <div class="reviews__item-head">
+                    <img class="reviews__item-avatar" src="images/reviews/reviews-1.jpg" alt="avatar">
+                    <img class="reviews__item-logo" src="images/logo-small-white.svg" alt="logo">
+                  </div>
+                  <a class="reviews__item-name" href="#!">Антоша</a>
+                  <p class="reviews__item-text">Всё топ! Пользовался многими подобными сайтами, пока что этот радует
+                    больше
+                    всего!</p>
+                </div>
+                <div class="reviews__item-grade">
+                  <img src="images/icons/star.svg" alt="" class="reviews__item-img">
+                  <span>5 из 5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="reviews__stat">Всего более: <span>11542 отзывов</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rec">
+    <div class="container">
+      <div class="rec__inner">
+        <h3 class="rec__title">Нас рекомендуют</h3>
+        <div class="rec__slider">
+          <div class="rec__slider-item">
+            <div class="rec__item">
+              <h3>1</h3>
+            </div>
+          </div>
+          <div class="rec__slider-item">
+            <div class="rec__item">
+              <h3>2</h3>
+            </div>
+          </div>
+          <div class="rec__slider-item">
+            <div class="rec__item">
+              <h3>3</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="stat" id="stat">
+    <div class="container">
+      <div class="stat__inner">
+        <div class="stat__item">
+          <img src="images/icons/box.svg" alt="box" class="stat__img">
+          <h3 class="stat__title">2281511</h3>
+          <h5 class="stat__suptitle">Продано предметов на маркете</h5>
+        </div>
+        <div class="stat__item">
+          <img src="images/icons/box.svg" alt="box" class="stat__img">
+          <h3 class="stat__title">465359</h3>
+          <h5 class="stat__suptitle">Счастливых клиентов</h5>
+        </div>
+        <div class="stat__item">
+          <img src="images/icons/box.svg" alt="box" class="stat__img">
+          <h3 class="stat__title">11524</h3>
+          <h5 class="stat__suptitle">Отзывов о нашем проекте</h5>
+        </div>
+        <div class="stat__item">
+          <img src="images/icons/box.svg" alt="box" class="stat__img">
+          <h3 class="stat__title">25729</h3>
+          <h5 class="stat__suptitle">Выплачено партнерам</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="desc">
+    <div class="container">
+      <div class="desc__inner">
+        <h6 class="desc__title">Продай скины за реальные деньги</h6>
+        <p class="desc__text">Мы, Avan.Market и мы поможем вам продать скины за реальные деньги быстро и безопасно. Мы
+          работаем с 2018 года и за это время смогли обрести хорошую репутацию на рынке покупки скинов. Тысячи людей
+          доверяют нам ежедневно и продают свои скины CS2, DOTA2, RUST и Team Fortress 2 по высоким ценам.
+          <br>
+          <br>
+          Продавать свои скины на торговой площадке Steam не всегда выгодно, причин на это много, а самая главная - там
+          нельзя вывести деньги. Мы же позволяем мгновенно получить деньги за скины. Поэтому если у вас имеются старые и
+          ненужные скины, то вы их смело можете обменять на реальные деньги на нашем проекте. Из-за того, что мы скупаем
+          скины по ценам выше, чем у других, это позволяет нам быть №1 на рынке скинов.
+        </p>
+        <h6 class="desc__title">Продать скины кс</h6>
+        <p class="desc__text">Вы можете здорово заработать, если решите продать скины за деньги из Counter Strike!
+          Скопилось много ненужных внутриигровых предметов? Срочно требуются финансы? Удалось поймать редкий скин и
+          хотите превратить его в крупную денежную сумму? Вы можете продать скины КС на AVAN MARKET. Наше главное
+          преимущество – платим дороже конкурентов. С АВАН МАРКЕТ вам не придется самостоятельно искать покупателей на
+          игровые вещи. Готовы купить как дорогие, так и дешевые скины по выгодной для вас стоимости. Авторизуйтесь на
+          сайте через Steam, выберите скины, которые хотите дорого продать, а также удобный способ оплаты. Выплатим за
+          15 минут!</p>
+        <h6 class="desc__title">Быстро продать скины CS по высокой цене</h6>
+        <p class="desc__text">Можно долго радоваться огромной коллекции игровых вещей в Counter Strike. Но рано или
+          поздно возникнет мысль – а почему бы не заработать реальные деньги на скинах? Уже тысячи пользователей на
+          собственном опыте убедились, чтобы продавать скины КС и выводить деньги – задача элементарная, все благодаря
+          платформе АВАН МАРКЕТ!
+          <br>
+          <br>
+          Онлайн-площадка AVAN MARKET – это самый безопасный и удобный метод продажи скина CS. Официальный сайт открыт
+          для продавцов в круглосуточном режиме. Мы сделали все возможное, чтобы минимизировать время на вывод денежных
+          средств.
+          <br>
+          <br>
+          Если мы говорим о цели продать скины КС ГО, то это уже не столь актуально. Так как игра была удалена из Steam
+          по причине выхода Counter-Strike 2. Платформа AVAN MARKET выкупает игровые вещи из CS 2 и предлагает продавцам
+          получить реальные деньги без огромных комиссий.
+          <br>
+          <br>
+          Познакомившись с площадкой АВАН МАРКЕТ, вам больше не придется сталкиваться с вопросом, где продать скины КС
+          ГО по цене, которая точно устроит каждого продавца.
+        </p>
+      </div>
+    </div>
+  </div>
 </main>
+<div class="modal" id="modal-1">
+  <div class="modal__box">
+    <button class="modal__close-btn">
+      <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z" />
+        <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" />
+      </svg>
+    </button>
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/jBCwxv8Ibio" title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen="" style="border: 0px; border-radius: 5px;"></iframe>
+  </div>
+</div>
 <footer class="footer">
   <div class="container">
     <div class="footer__inner">
@@ -118,8 +617,11 @@
           <img class="logo__img" src="images/logo-small-black.svg" alt="logo">
         </a>
         <div class="footer__item">
-          <h6 class="footer__item-title">НАШИ ПРОДУКТЫ
-            <img class="footer__item-arrow" src="images/icons/arrow.svg" alt="arrow">
+          <h6 class="footer__item-title button">НАШИ ПРОДУКТЫ
+            <svg class="footer__item-arrow" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+              data-testid="ArrowForwardIosSharpIcon">
+              <path d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"></path>
+            </svg>
           </h6>
           <ul class="footer__list">
             <li class="footer__list-item">
@@ -140,8 +642,11 @@
           </ul>
         </div>
         <div class="footer__item">
-          <h6 class="footer__item-title">О ПРОЕКТЕ
-            <img class="footer__item-arrow" src="images/icons/arrow.svg" alt="arrow">
+          <h6 class="footer__item-title button">О ПРОЕКТЕ
+            <svg class="footer__item-arrow" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+              data-testid="ArrowForwardIosSharpIcon">
+              <path d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"></path>
+            </svg>
           </h6>
           <ul class="footer__list">
             <li class="footer__list-item">
@@ -156,8 +661,11 @@
           </ul>
         </div>
         <div class="footer__item">
-          <h6 class="footer__item-title">ПОДДЕРЖКА
-            <img class="footer__item-arrow" src="images/icons/arrow.svg" alt="arrow">
+          <h6 class="footer__item-title button">ПОДДЕРЖКА
+            <svg class="footer__item-arrow" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+              data-testid="ArrowForwardIosSharpIcon">
+              <path d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"></path>
+            </svg>
           </h6>
           <ul class="footer__list">
             <li class="footer__list-item">
@@ -175,8 +683,11 @@
           </ul>
         </div>
         <div class="footer__item">
-          <h6 class="footer__item-title">Следите за нами
-            <img class="footer__item-arrow" src="images/icons/arrow.svg" alt="arrow">
+          <h6 class="footer__item-title button">Следите за нами
+            <svg class="footer__item-arrow" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+              data-testid="ArrowForwardIosSharpIcon">
+              <path d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"></path>
+            </svg>
           </h6>
           <ul class="footer__social-list">
             <li class="footer__social-item">
@@ -235,9 +746,9 @@
       <div class="footer__bottom-item">
         <div class="footer__help">
           <a class="footer__help-link" href="#!">Гарантии</a>
-          <span>•</span>
+          <span class="footer__help-dots">•</span>
           <a class="footer__help-link" href="#!">Оферта сервиса</a>
-          <span>•</span>
+          <span class="footer__help-dots">•</span>
           <a class="footer__help-link" href="#!">Политика конфиденциальности</a>
         </div>
         <div class="copyright">
@@ -258,6 +769,8 @@
   </div>
 </footer>
 </div>
+<script src="libs/jquery-3.7.0.js"></script>
+<script src="libs/slick/slick.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 

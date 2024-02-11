@@ -78,9 +78,8 @@
     $('.reviews__slider').slick({
       infinite: true,
       slidesToShow: 4,
-      slidesToScroll: 1,
-      swipeToSlide: true,
-      autoplay: false,
+      slidesToScroll: 2,
+      autoplay: true,
       autoplaySpeed: 2000,
       prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="14" viewBox="0 0 10 16" fill="none"><path d="M8 2L2 8L8 14" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
       nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="14" viewBox="0 0 10 16" fill="none"><path d="M2 2L8 8L2 14" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
@@ -92,6 +91,7 @@
             arrows: false,
             centerMode: true,
             slidesToShow: 3,
+            swipeToSlide: true,
             variableWidth: true,
             dots: true,
           }
@@ -106,8 +106,8 @@
       swipeToSlide: true,
       centerMode: true,
       variableWidth: true,
-      autoplay: false,
-      autoplaySpeed: 1000,
+      autoplay: true,
+      autoplaySpeed: 1500,
       prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="14" viewBox="0 0 10 16" fill="none"><path d="M8 2L2 8L8 14" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
       nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="14" viewBox="0 0 10 16" fill="none"><path d="M2 2L8 8L2 14" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
 

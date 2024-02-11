@@ -135,6 +135,36 @@ p {
   left: unset;
 }
 
+.slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding-top: 30px;
+
+  li {
+    height: 5px;
+    font-size: 0;
+    line-height: 0;
+  }
+
+  button {
+    width: 24px;
+    height: 5px;
+    border-radius: 5px;
+    background: var(--dots, #313742);
+    font-size: 0;
+    line-height: 0;
+    transition: all 0.3s ease-out;
+  }
+
+  .slick-active button {
+    width: 48px;
+    background: var(--orange, #fbd506);
+    transition: all 0.3s ease-out;
+  }
+}
+
 @keyframes shake-vertical-fourth {
 
   0%,
@@ -205,13 +235,14 @@ p {
   height: 100vh;
   z-index: 99998;
   background-color: rgba(0, 0, 0, .5);
-  display: none;
+  display: grid;
   align-items: center;
   justify-content: center;
   overflow-y: auto;
   visibility: hidden;
   opacity: 0;
-  transition: opacity .2s, visibility .2s;
+  backdrop-filter: blur(0);
+  transition: all .2s ease-out;
 }
 
 .modal__box {
@@ -247,9 +278,9 @@ p {
 }
 
 .modal.open {
-  display: grid;
   visibility: visible;
   opacity: 1;
+  backdrop-filter: blur(7px);
 }
 
 .modal.open .modal__box {
